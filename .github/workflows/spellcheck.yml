@@ -27,7 +27,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: trim all man page *.md files
         run: find docs -name "*.md" ! -name "_*" | xargs -n1 ./.github/scripts/cleancmd.pl
